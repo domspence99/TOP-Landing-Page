@@ -4,3 +4,9 @@
     - Add each of the elements that are seen in the image
     - Wrap elements into containers (for flex purposes)
     - Ensure elements have proper class names
+4. CSS:
+    - Work on one component at a time
+    Header:
+    - Apply flex on header container to put <h1> and <ul> children in a row 
+    - Flex the header list & remove bullet point style to ul
+    - Adjust spacing, margin, padding, font etc
