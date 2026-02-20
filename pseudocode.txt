@@ -1,0 +1,6 @@
+1. Create index.html & style.css
+2. Create boilerplate html & link stylesheet
+3. HTML:
+    - Add each of the elements that are seen in the image
+    - Wrap elements into containers (for flex purposes)
+    - Ensure elements have proper class names
