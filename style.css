@@ -51,21 +51,28 @@ body {
 /*TOP SECTION */
 .top-section {
     background-color: #1F2937;
-    padding: 32px 15%; /*pushes content in and creates spaces around element*/
+    padding: 8% 15%; /*pushes content in and creates spaces around element*/
 
     /*Spaces the left and right sets of elements*/
     display: flex;
     justify-content: space-between;
 }
 
-/*sets the height and width for the left and right top sections*/
+/*sets the initial width (can go smaller) for the left and right top sections*/
 .top-section-right, .top-section-left {
-    width: 480px;
-    height: 200px;
+    flex-basis: 480px;  
+}
+
+/*Sets the content in the left top section as a column, seperates items by 10px and aligns all items to left of box*/
+.top-section-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .top-section-right {
-    background-color: grey;
+    background-color: #6E747D;
     
     /*Put the item (p) in the middle of the right section*/
     display: flex;
