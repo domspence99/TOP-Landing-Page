@@ -1,7 +1,11 @@
+/* Imports roboto font + supports font weights */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     list-style-type: none; /*removes bullet points from lists*/
+    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
 }
 
 /*
@@ -23,16 +27,17 @@ body {
  
     /*SIZING/POSITIONING*/
     height: 84px;
-    padding: 0px 64px; /*pushes content inwards*/
+    padding:0 15%; /*pushes content inwards*/
     /*STYLING*/
     background-color: #1F2937;
     color: white;
-    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
 }
 
 .header h1 {
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: 900;
+
 }
 
 .header-links {
@@ -46,8 +51,7 @@ body {
 /*TOP SECTION */
 .top-section {
     background-color: #1F2937;
-    color: white;
-    padding: 32px 64px; /*pushes content in and creates spaces around element*/
+    padding: 32px 15%; /*pushes content in and creates spaces around element*/
 
     /*Spaces the left and right sets of elements*/
     display: flex;
@@ -56,7 +60,7 @@ body {
 
 /*sets the height and width for the left and right top sections*/
 .top-section-right, .top-section-left {
-    width: 500px;
+    width: 480px;
     height: 200px;
 }
 
@@ -67,4 +71,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.top-section-left h2{
+    font-size: 48px ;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.top-section-left p, .image-placeholder p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.sign-up-btn {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 5px 20px;
+    border-radius: 8px;
+    border: none;
 }
