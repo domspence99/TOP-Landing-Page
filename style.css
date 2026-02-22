@@ -50,12 +50,13 @@ body {
 
 /*TOP SECTION */
 .top-section {
-    background-color: #1F2937;
-    padding: 8% 15%; /*pushes content in and creates spaces around element*/
-
     /*Spaces the left and right sets of elements*/
     display: flex;
     justify-content: space-between;
+
+    /*Styling of top section container*/
+    background-color: #1F2937;
+    padding: 8% 15%; /*pushes content in and creates spaces around element*/
 }
 
 /*sets the initial width (can go smaller) for the left and right top sections*/
@@ -71,22 +72,23 @@ body {
     gap: 10px;
 }
 
+
 .top-section-right {
-    background-color: #6E747D;
-    
-    /*Put the item (p) in the middle of the right section*/
+    /*Put the item (p text) in the middle of the right section*/
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #6E747D;
 }
 
+/*Styling for buttons and text in top section */
 .top-section-left h2{
     font-size: 48px ;
     color: #F9FAF8;
     font-weight: 900;
 }
 
-.top-section-left p, .image-placeholder p {
+.top-section-left p, .top-section-right p {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -97,4 +99,59 @@ body {
     padding: 5px 20px;
     border-radius: 8px;
     border: none;
+}
+
+
+
+/*MIDDLE UPPER SECTION*/
+.middle-upper-section {
+    /*Column flex title and cards containers*, align in center and gap between*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    background-color: rgb(255, 255, 255);
+    /*sets padding of middle section*/
+    padding: 3% 15% 7% 15%;
+}
+
+/*is container that contains the 4 div and text containers*/
+.images-container {
+    display: flex;
+    gap: 50px;
+}
+
+/*children of images-container*/
+.image-text-item {
+    /*sets the min width of white squares and text container and doesn't grow or shrink*/
+    flex-basis: 150px;
+    flex-shrink:0;
+    flex-grow: 0;
+
+    /*sets the white squares and text as a column flex and aligns both in center*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /*aligns text elements*/
+    color: #6E747D;
+}
+
+
+/*The empty white squares*/
+.blue-border-div {
+    /*sets white squares to fill the parent container (150px flex basis) and hard sets the heights*/
+    width: 100%;
+    height: 150px;
+
+    /*styling of boxes*/
+    background-color: rgb(255, 255, 255);
+    border: solid #3882F6 3px;
+    border-radius: 12px;
+}
+
+.middle-upper-section h3 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #1F2937;
 }

@@ -1,0 +1,7 @@
+- Be conscious of setting hard height and width properties using flex as things can
+become out of alignment if you start pushing elements with margin etc
+
+- For text centering: Flexbox only centers elements so a p element that is centered
+could look like the text is not centered. The p element is centered but the text
+contained inside the p element (child) is not. Can either make the p element also
+a flex item and center the child (text) or can text-align: center on the p element.
