@@ -155,3 +155,24 @@ body {
     font-weight: 900;
     color: #1F2937;
 }
+
+/* MIDDLE LOWER SECTION */
+.middle-lower-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+
+    background-color: #E5E7EB;
+    padding: 6% 25%;
+}
+
+.middle-lower-section em{
+    font-size: 32px;
+    color:#6E747D;
+}
+
+.middle-lower-section strong{
+    font-size: 22px;
+    font-weight: 900;
+}
