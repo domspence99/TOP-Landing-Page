@@ -5,3 +5,7 @@ become out of alignment if you start pushing elements with margin etc
 could look like the text is not centered. The p element is centered but the text
 contained inside the p element (child) is not. Can either make the p element also
 a flex item and center the child (text) or can text-align: center on the p element.
+
+NEED TO PRACTICE
+- Working with flexbox and empty divs & how to stretch/set responsive heights/widths.
+Empty divs don't hold shape and change dependent on content put inside.
