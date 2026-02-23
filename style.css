@@ -216,3 +216,12 @@ body {
     font-size: 20px;
 }
 
+/*FOOTER*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    padding: 3% 15%;
+    color: #E5E7EB;
+}
